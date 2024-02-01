@@ -64,11 +64,11 @@ const TimelineCard = ({ id, tagline, title, description }) => {
           { (id < 10) ? `0${id}` : id }
         </h1>
         <div className="h-full w-1 bg-gray-500" ref={lineRef}>
-          <div className="bg-yellow-700" style={{height: lineHeight+"px"}}/>
+          <div className="bg-purple-700" style={{height: lineHeight+"px"}}/>
         </div>
       </div>
-      <div className="p-5 bg-red-800">
-        <p>{ compHeight } - { position.toFixed(0) } / { window.innerHeight/2 }</p>
+      <div className="p-5">
+        {/* <p>{ compHeight } - { position.toFixed(0) } / { window.innerHeight/2 }</p> */}
         <h6 className="text-sm">{ tagline }</h6>
         <h2 className="text-4xl font-bold">{ title }</h2>
         <p>{ description }</p>
