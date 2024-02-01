@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 
-const TimelineCard = ({ tagline, title, description }) => {
+const TimelineCard = ({ id, tagline, title, description }) => {
   const [position, setPosition] = useState(0);
   const [compHeight, setCompHeight] = useState(0);
   const [lineHeight, setLineHeight] = useState(0);
@@ -60,7 +60,9 @@ const TimelineCard = ({ tagline, title, description }) => {
   return (
     <div className='min-h-80 mb-10 flex gap-10 ' ref={cardRef}>
       <div className="p-5 flex flex-col items-center gap-5  ">
-        <h1 className={`pt-5 text-4xl font-extrabold transition-all duration-400 ${enlight ? "text-gray-100" : "text-gray-600"}`}>01</h1>
+        <h1 className={`pt-5 text-4xl font-extrabold transition-all duration-400 ${enlight ? "text-gray-100" : "text-gray-600"}`}>
+          { (id < 10) ? `0${id}` : id }
+        </h1>
         <div className="h-full w-1 bg-gray-500" ref={lineRef}>
           <div className="bg-yellow-700" style={{height: lineHeight+"px"}}/>
         </div>

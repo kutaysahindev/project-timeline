@@ -12,7 +12,7 @@ function App() {
       <Welcome/>
       <div className='px-60 mb-[600px]'>
         {cards.map(card => (
-          <TimelineCard key={card.id} tagline={card.tagline} title={card.title} description={card.description} />
+          <TimelineCard key={card.id} id={card.id} tagline={card.tagline} title={card.title} description={card.description} />
         ))}
       </div>
     </>
