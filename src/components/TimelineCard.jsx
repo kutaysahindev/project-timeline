@@ -33,6 +33,7 @@ const TimelineCard = ({ tagline, title, description }) => {
     if (position !== 0 && position <= window.innerHeight/2) {
       const fark = ((window.innerHeight/2) - position).toFixed(2)
       if (fark < lineRef.current.offsetHeight)
+        setLineHeight(fark)
         console.log("fark: ", fark, lineRef.current.offsetHeight)
       // setLineHeight(position - window.innerHeight/2)
       // const scrolledHeight = window.scrollY || document.documentElement.scrollTop;
@@ -61,7 +62,7 @@ const TimelineCard = ({ tagline, title, description }) => {
       <div className="p-5 flex flex-col items-center gap-5  ">
         <h1 className={`pt-5 text-4xl font-extrabold transition-all duration-400 ${enlight ? "text-gray-100" : "text-gray-600"}`}>01</h1>
         <div className="h-full w-1 bg-gray-500" ref={lineRef}>
-          <div className="bg-yellow-700" style={{height: fark}}/>
+          <div className="bg-yellow-700" style={{height: lineHeight+"px"}}/>
         </div>
       </div>
       <div className="p-5 bg-red-800">
