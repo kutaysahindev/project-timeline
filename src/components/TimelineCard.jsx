@@ -1,61 +1,34 @@
 import { useEffect, useRef, useState } from "react";
 
 const TimelineCard = ({ id, tagline, title, description }) => {
-  const [position, setPosition] = useState(0);
-  const [compHeight, setCompHeight] = useState(0);
+  // const [topPostion, setTopPosition] = useState(0);
+  // const [compHeight, setCompHeight] = useState(0);
   const [lineHeight, setLineHeight] = useState(0);
   const [enlight, setEnlight] = useState(false)
   const cardRef = useRef(null);
   const lineRef = useRef(null);
   
+  const getVerticalPosition = () => {
+    const rect = cardRef.current.getBoundingClientRect();
+    // setTopPosition(rect.top)
+    if(rect.top < (window.innerHeight/2)) {
+      setEnlight(true)
+      const fark = ((window.innerHeight/2) - rect.top).toFixed(2)
+      if (fark < lineRef.current.offsetHeight) setLineHeight(fark)
+    }
+    if(rect.top > (window.innerHeight/2)) {
+      setEnlight(false)
+      setLineHeight(0)
+    }
+    if (rect.bottom < (window.innerHeight/2)) setLineHeight(lineRef.current.offsetHeight)
+  };
+
   useEffect(() => {
-    setCompHeight(cardRef.current.offsetHeight);
-    const getVerticalPosition = () => {
-      const rect = cardRef.current.getBoundingClientRect();
-      setPosition(rect.top)
-      if(rect.top < (window.innerHeight/2)) {
-        setEnlight(true)
-      }
-      if(rect.top > (window.innerHeight/2)) {
-        setEnlight(false)
-      }
-    };
+    // setCompHeight(cardRef.current.offsetHeight);
     getVerticalPosition();
-    // const handleScroll = () => getVerticalPosition();
     window.addEventListener('scroll', getVerticalPosition);
     return () => window.removeEventListener('scroll', getVerticalPosition);
   }, []);
-
-  useEffect(() => {
-    // rect.top < (window.innerHeight/2) = height: 0%
-    // rect.top < (window.innerHeight/2) = height: 100%
-    // console.log("line-height:", lineRef.current.offsetHeight);
-    if (position !== 0 && position <= window.innerHeight/2) {
-      const fark = ((window.innerHeight/2) - position).toFixed(2)
-      if (fark < lineRef.current.offsetHeight)
-        setLineHeight(fark)
-        console.log("fark: ", fark, lineRef.current.offsetHeight)
-      // setLineHeight(position - window.innerHeight/2)
-      // const scrolledHeight = window.scrollY || document.documentElement.scrollTop;
-      // console.log('scrolledHeight: ', scrolledHeight)
-    }
-
-    // const getVerticalPosition = () => {
-    //   const rect = lineRef.current.getBoundingClientRect();
-    //   setPosition(rect.top)
-    //   if(rect.top < (window.innerHeight/2)) {
-    //     setEnlight(true)
-    //   }
-      // if(rect.top > (window.innerHeight/2)) {
-      //   setEnlight(false)
-      // }
-    // };
-    // getVerticalPosition();
-    // const handleScroll = () => getVerticalPosition();
-    // window.addEventListener('scroll', getVerticalPosition);
-    // return () => window.removeEventListener('scroll', getVerticalPosition);
-  }, [position])
-  
 
   return (
     <div className='min-h-80 flex gap-10 ' ref={cardRef}>
@@ -68,7 +41,7 @@ const TimelineCard = ({ id, tagline, title, description }) => {
         </div>
       </div>
       <div className="p-5 pt-0">
-        {/* <p>{ compHeight } - { position.toFixed(0) } / { window.innerHeight/2 }</p> */}
+        {/* <p>{ compHeight } - { topPostion.toFixed(0) } / { window.innerHeight/2 }</p> */}
         <h6 className="text-sm">{ tagline }</h6>
         <h2 className="mb-3 text-5xl font-bold">{ title }</h2>
         <p className="pb-20">{ description }</p>
