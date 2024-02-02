@@ -1,20 +1,47 @@
 export const cards = [
   {
-    id: 3,
-    tagline: "hasan",
-    title: "Heading 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet luctus nisi porta consectetur. Vivamus volutpat lectus in ipsum luctus faucibus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pretium in enim a aliquam. Vivamus ante lacus, sagittis eu elementum eu, pretium id turpis. Nunc nec nibh vehicula, sollicitudin orci vitae, gravida mi. Quisque et lorem sit amet ante interdum sollicitudin. Donec fringilla ac eros eu dignissim. Sed id viverra felis. Donec ultrices magna ac nibh semper commodo ut quis ligula.Curabitur ut nunc consectetur metus porta euismod vitae nec nibh. Donec ultrices ipsum ac eros placerat eleifend. Suspendisse potenti. Proin tempus nulla ultricies felis efficitur, et dapibus justo viverra. Aenean imperdiet ex felis, pharetra iaculis lorem facilisis nec. Nulla posuere neque enim, eu egestas augue congue et. Integer ornare, turpis id posuere interdum, magna ante sodales nibh, nec efficitur est eros vitae elit. Nulla quis urna vitae justo sagittis pharetra. Vestibulum ut nunc ut urna dapibus viverra. Nunc convallis lorem eu ex posuere, a ornare orci vehicula. Ut ullamcorper lacinia mauris. In a congue turpis. Nulla facilisi. Nunc vulputate mi ut mi ultricies, ac tincidunt lectus commodo. Sed vestibulum est eu ante euismod feugiat. Donec at feugiat nisl. Phasellus sit amet porta urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas imperdiet congue tellus, vel blandit nunc vulputate quis. Cras nibh nulla, suscipit eu viverra ullamcorper, elementum ac nisl. Vivamus in commodo velit. Vivamus dolor ligula, mattis eget lectus nec, tincidunt tempor nibh. Cras pulvinar, diam sit amet bibendum consectetur, metus est molestie mi, vitae finibus neque metus vitae ante. In hac habitasse platea dictumst. Nunc ac dolor sem. Vestibulum id porttitor massa. Praesent vitae ultrices nisl. Fusce ut eros efficitur, dictum odio vel, vulputate turpis. Suspendisse eu dignissim massa. Curabitur sit amet ligula quis libero scelerisque tincidunt. Nam egestas tellus pretium eros ornare congue. Sed sapien dolor, congue eu leo maximus, aliquet laoreet ex. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Morbi vestibulum ac magna in tempor. Pellentesque ut ipsum eu sem auctor fringilla. Cras varius dolor velit, a congue velit semper sed. Phasellus sit amet enim eget odio faucibus scelerisque vel eget tortor. Sed vel mi enim."
+    id: 1,
+    tagline: "05/12/2023",
+    title: "Project Headstart",
+    description: `
+      We embarked on the recreation of our internal tool, the Arçelik AI Platform, starting from scratch. Using Figma, we redesigned the entire structure for better usability and efficiency. Our tech stack includes .NET 7 and React.js. To ensure secure access, we integrated Okta Auth, and Azure serves as our database.
+    `,
+    image: "",
   },
   {
     id: 2,
-    tagline: "kutay",
-    title: "Heading 2",
-    description: "Donec pretium in enim a aliquam. Vivamus ante lacus, sagittis eu elementum eu, pretium id turpis. Nunc nec nibh vehicula, sollicitudin orci vitae, gravida mi. Quisque et lorem sit amet ante interdum sollicitudin. Donec fringilla ac eros eu dignissim. Sed id viverra felis. Donec ultrices magna ac nibh semper commodo ut quis ligula.Curabitur ut nunc consectetur metus porta euismod vitae nec nibh. Donec ultrices ipsum ac eros placerat eleifend. Suspendisse potenti. Proin tempus nulla ultricies felis efficitur, et dapibus justo viverra. Aenean imperdiet ex felis, pharetra iaculis lorem facilisis nec. Nulla posuere neque enim, eu egestas augue congue et. Integer ornare, turpis id posuere interdum, magna ante sodales nibh, nec efficitur est eros vitae elit. Nulla quis urna vitae justo sagittis pharetra. Vestibulum ut nunc ut urna dapibus viverra. Nunc convallis lorem eu ex posuere, a ornare orci vehicula. Ut ullamcorper lacinia mauris. In a congue turpis. Nulla facilisi. Nunc vulputate mi ut mi ultricies, ac tincidunt lectus commodo. Sed vestibulum est eu ante euismod feugiat. Donec at feugiat nisl. Phasellus sit amet porta urna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas imperdiet congue tellus, vel blandit nunc vulputate quis."
+    tagline: "29/12/2023",
+    title: "Mark I",
+    description: `
+      The initial phase involved setting up Redux to manage user data and fetching AI Models from the backend. We utilized axios to handle form data submission seamlessly. Additionally, a LoadingLayer.jsx component was implemented to provide users with a smooth experience during Okta token checks and form redirection.
+    `,
+    image: "",
   },
   {
-    id: 1,
-    tagline: "teoman",
-    title: "Heading 3",
-    description: "Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Donec pretium in enim a aliquam. Vivamus ante lacus, sagittis eu elementum eu, pretium id turpis. Nunc nec nibh vehicula, sollicitudin orci vitae, gravida mi. Quisque et lorem sit amet ante interdum sollicitudin. Donec fringilla ac eros eu dignissim. Sed id viverra felis. Donec ultrices magna ac nibh semper commodo ut quis ligula.Curabitur ut nunc consectetur metus porta euismod vitae nec nibh. Donec ultrices ipsum ac eros placerat eleifend. Suspendisse potenti. Proin tempus nulla ultricies felis efficitur, et dapibus justo viverra."
+    id: 3,
+    tagline: "10/01/2024",
+    title: "Mark II",
+    description: `
+      We focused on optimizing our codebase by centralizing axios requests and removing redundant functions. A fully functional video component was added, controlling form access until users complete the video course. Enhanced security measures were implemented with access tokens and middleware. Furthermore, a video status function was introduced to keep track of the latest version in the database.
+    `,
+    image: "",
   },
-]
+  {
+    id: 4,
+    tagline: "18/01/2024",
+    title: "Mark III",
+    description: `
+      This phase emphasized enhancing security and storage capabilities. We adopted Dependabot for managing security updates and began storing videos in Azure Blob Storage, fetching them dynamically from the database. This not only improved security but also optimized storage and access speed for video content.
+    `,
+    image: "",
+  },
+  {
+    id: 5,
+    tagline: "06/02/2024",
+    title: "Mark IV",
+    description: `
+      The latest iteration saw significant improvements in performance and usability. Migrating the project to Vite from create-react-app drastically reduced loading times and RAM usage by at least 45%. We conducted a thorough codebase refactor to enhance readability and maintainability. Additionally, a Quiz functionality was added post-video course to assess users' understanding of AI Wizard concepts. This feature helps ensure users have grasped essential concepts before proceeding, enhancing the overall user experience.
+    `,
+    image: "",
+  },
+];

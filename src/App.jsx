@@ -5,19 +5,18 @@ import Footer from "./components/Footer";
 import { cards } from "./utils/cards";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <>
       <Welcome />
-      <div className="px-60 mb-[600px]">
-        {cards.map((card) => (
+      <div className="lg:px-60 px-10">
+        {cards.map((card, index) => (
           <TimelineCard
             key={card.id}
             id={card.id}
             tagline={card.tagline}
             title={card.title}
             description={card.description}
+            isLast={index === cards.length - 1} // Check if it's the last item
           />
         ))}
       </div>

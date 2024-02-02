@@ -26,23 +26,23 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="footer-container relative">
-      <div className="footer-text justify-center mb-3 text-center">
-        Made by Arçelik Intern Team w/ ♥
-      </div>
-      <div className="flex justify-center space-x-4 animate-slide-up">
-        {teamMembers.map((member, index) => (
-          <a
-            key={index}
-            href={member.linkedinUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="flex items-center px-3 py-2 border border-gray-700 rounded-md transition duration-500 hover:bg-gray-100 hover:text-black mb-4"
-          >
-            <FaLinkedin className="h-5 w-5 mr-2" />
-            {member.name}
-          </a>
-        ))}
+    <footer className="footer-container relative py-8">
+      <div className="container mx-auto text-center">
+        <div className="mb-3">Made by Arçelik Intern Team w/ ♥</div>
+        <div className="flex justify-center items-center flex-wrap">
+          {teamMembers.map((member, index) => (
+            <a
+              key={index}
+              href={member.linkedinUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center px-3 py-2 border border-gray-700 rounded-md transition duration-500 hover:bg-gray-100 hover:text-black mb-4 mx-2"
+            >
+              <FaLinkedin className="h-5 w-5 mr-2" />
+              {member.name}
+            </a>
+          ))}
+        </div>
       </div>
     </footer>
   );
