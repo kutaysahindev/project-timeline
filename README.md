@@ -1,4 +1,5 @@
-# React + Vite
+[<img src="./src/assets/banner.png">](https://bitterkofte.github.io/project-timeline/)
+You can visit our webpage [here](https://bitterkofte.github.io/project-timeline/).
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
