@@ -1,4 +1,3 @@
-import { useState } from "react";
 import TimelineCard from "./components/TimelineCard";
 import Welcome from "./components/Welcome";
 import Footer from "./components/Footer";

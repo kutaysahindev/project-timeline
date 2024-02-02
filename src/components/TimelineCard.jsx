@@ -26,7 +26,7 @@ const TimelineCard = ({ id, tagline, title, description, image, isLast }) => {
       getVerticalPosition();
     };
 
-    getVerticalPosition();
+    // getVerticalPosition();
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -49,7 +49,7 @@ const TimelineCard = ({ id, tagline, title, description, image, isLast }) => {
               className="bg-purple-700"
               style={{
                 height: lineHeight + "px",
-                transition: "height 0.3s ease",
+                transition: "height 0.1s ease",
               }}
             />
           )}
