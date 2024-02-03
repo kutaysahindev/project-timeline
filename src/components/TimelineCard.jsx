@@ -22,19 +22,12 @@ const TimelineCard = ({ id, tagline, title, description, image, isLast }) => {
   };
 
   useEffect(() => {
-    const handleScroll = () => {
-      getVerticalPosition();
-    };
-
-    // getVerticalPosition();
-    window.addEventListener("scroll", handleScroll);
-    return () => {
-      window.removeEventListener("scroll", handleScroll);
-    };
+    window.addEventListener("scroll", getVerticalPosition);
+    return () => window.removeEventListener("scroll", getVerticalPosition);
   }, []);
 
   return (
-    <div className="min-h-80 flex gap-10 relative" ref={cardRef}>
+    <div className="min-h-80 flex md:gap-10 gap-0 relative" ref={cardRef}>
       <div className="px-5 flex flex-col items-center gap-5 relative z-10">
         <h1
           className={`pt-3 text-6xl font-extrabold transition-all duration-400 ${

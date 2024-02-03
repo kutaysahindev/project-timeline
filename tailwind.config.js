@@ -6,11 +6,18 @@ export default {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        "josefin": ["Josefin Sans", "sans-serif"],
+        "barlow": ['Barlow Condensed', "sans-serif"],
+      },
       backgroundColor: {
         "blue-trs": "#9b9b9b8c"
       },
       dropShadow: {
-        "white": "0 0 3px #ffffff",
+        "white": [
+          "-5px 0 10px #ffffffcd",
+          "5px 0 10px #ffffffcd",
+        ],
         "react": [
           "-8px 0 10px #3c8ef9ca",
           "8px 0 10px #25ffe2bc"
@@ -20,7 +27,7 @@ export default {
           "8px 0 10px #ffe925bc"
         ],
         "redux": [
-          "-8px 0 10px #3c97f9ca",
+          "-8px 0 10px #8f14c8ca",
           "8px 0 10px #8556f3ca"
         ],
         "router": [

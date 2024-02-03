@@ -5,9 +5,9 @@ import { cards } from "./utils/cards";
 
 function App() {
   return (
-    <>
+    <div className="font-barlow">
       <Welcome />
-      <div className="lg:px-60 px-10">
+      <div className="lg:px-60 md:px-10 px-5">
         {cards.map((card, index) => (
           <TimelineCard
             key={card.id}
@@ -20,7 +20,7 @@ function App() {
         ))}
       </div>
       <Footer />
-    </>
+    </div>
   );
 }
 

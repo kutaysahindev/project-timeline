@@ -5,7 +5,7 @@ const Footer = () => {
   const teamMembers = [
     {
       name: "Hasan Talha Çelik",
-      linkedinUrl: "https://www.linkedin.com/in/",
+      linkedinUrl: "https://www.linkedin.com/in/hasantalhacelik",
     },
     {
       name: "Hazal Nur Asma",
