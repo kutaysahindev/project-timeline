@@ -1,6 +1,7 @@
 import TimelineCard from "./components/TimelineCard";
 import Welcome from "./components/Welcome";
 import Footer from "./components/Footer";
+import Cards from "./components/Cards";
 import { cards } from "./utils/cards";
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           />
         ))}
       </div>
+      <Cards />
       <Footer />
     </div>
   );
