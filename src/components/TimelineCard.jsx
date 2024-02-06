@@ -28,7 +28,7 @@ const TimelineCard = ({ id, tagline, title, description, image, isLast }) => {
 
   return (
     <div className="min-h-80 flex md:gap-10 gap-0 relative" ref={cardRef}>
-      <div className="px-5 flex flex-col items-center gap-5 relative z-10">
+      <div className="w-16 px-5 flex flex-col items-center gap-5 relative z-10">
         <h1
           className={`pt-3 text-6xl font-extrabold transition-all duration-400 ${
             enlight ? "text-gray-100" : "text-gray-600"

@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="font-barlow">
       <Welcome />
-      <div className="lg:px-60 md:px-10 px-5">
+      <div id="timeline" className="lg:px-60 md:px-10 px-5 md:pt-12 pt-8">
         {cards.map((card, index) => (
           <TimelineCard
             key={card.id}
