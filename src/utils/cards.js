@@ -4,7 +4,7 @@ export const cards = [
     tagline: "05/12/2023",
     title: "Project Headstart",
     description: `
-      We embarked on the recreation of our internal tool, the Arçelik AI Platform, starting from scratch. Using Figma, we redesigned the entire structure for better usability and efficiency. Our tech stack includes .NET 7 and React.js. To ensure secure access, we integrated Okta Auth, and Azure serves as our database.
+      We embarked on the recreation of our internal tool, the Intern AI Platform, starting from scratch. Using Figma, we redesigned the entire structure for better usability and efficiency. Our tech stack includes .NET 7 and React.js. To ensure secure access, we integrated Okta Auth, and Azure serves as our database.
     `,
     image: "",
   },
