@@ -53,7 +53,9 @@ const TimelineCard = ({ id, tagline, title, description, image, isLast }) => {
           showText ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <h6 className="text-sm">{tagline}</h6>
+        <h6 className={`text-sm ${isLast ? "text-yellow-300" : ""}`}>
+          {tagline}
+        </h6>
         <h2 className="mb-3 text-5xl font-bold">{title}</h2>
         <p className="pb-20">{description}</p>
       </div>

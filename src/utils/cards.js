@@ -40,8 +40,17 @@ export const cards = [
     tagline: "06/02/2024",
     title: "Mark IV",
     description: `
-      The latest iteration saw significant improvements in performance and usability. Migrating the project to Vite from create-react-app drastically reduced loading times and RAM usage by at least 45%. We conducted a thorough codebase refactor to enhance readability and maintainability. Additionally, a Quiz functionality was added post-video course to assess users' understanding of AI Wizard concepts. This feature helps ensure users have grasped essential concepts before proceeding, enhancing the overall user experience.
+      This iteration saw significant improvements in performance and usability. Migrating the project to Vite from create-react-app drastically reduced loading times and RAM usage by at least 45%. We conducted a thorough codebase refactor to enhance readability and maintainability. Additionally, a Quiz functionality was added post-video course to assess users' understanding of AI Wizard concepts. This feature helps ensure users have grasped essential concepts before proceeding, enhancing the overall user experience.
     `,
+    image: "",
+  },
+  {
+    id: 6,
+    tagline: "01/03/2024 - New!",
+    title: "Mark V",
+    description: `
+    In the latest patch, Mark V, the introduction of the Admin Dashboard stands out as a pivotal enhancement, offering administrators centralized tools for platform management. Alongside this key addition, video time manipulation is now restricted by backend logic, ensuring precise control and preventing unauthorized changes. Other features such as Guide Tours at front-end, dynamic route generation, question addition to the database, video uploads, and title updates have been implemented, collectively enhancing usability and functionality across the platform.
+      `,
     image: "",
   },
 ];

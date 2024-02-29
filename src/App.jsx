@@ -1,4 +1,5 @@
 import TimelineCard from "./components/TimelineCard";
+import UpdateNotification from "./components/UpdateNotification";
 import Welcome from "./components/Welcome";
 import Footer from "./components/Footer";
 import Cards from "./components/Cards";
@@ -20,6 +21,7 @@ function App() {
           />
         ))}
       </div>
+      <UpdateNotification />
       <Cards />
       <Footer />
     </div>
